@@ -5,22 +5,36 @@ body{
     color:white;
 }
 
-.login-container{
-    width:350px;
-    margin:120px auto;
+header{
     text-align:center;
-    background:#1e293b;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 0 25px gold;
+    padding:40px;
 }
 
-input{
-    width:90%;
-    padding:12px;
-    margin:10px;
-    border:none;
-    border-radius:10px;
+header h1{
+    color:gold;
+    font-size:50px;
+}
+
+.products{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    background:#1e293b;
+    width:250px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px gold;
 }
 
 button{
@@ -36,30 +50,4 @@ button{
 button:hover{
     transform:scale(1.1);
     background:white;
-}
-
-header{
-    text-align:center;
-    padding:30px;
-}
-
-.products{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.card{
-    background:#1e293b;
-    width:250px;
-    padding:20px;
-    border-radius:15px;
-    text-align:center;
-    transition:0.5s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 20px gold;
 }

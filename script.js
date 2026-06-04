@@ -1,20 +1,15 @@
-function explore() {
-    alert("Welcome to LUXORA Premium Collection");
+function login(){
+
+    const user=document.getElementById("username").value;
+    const pass=document.getElementById("password").value;
+
+    if(user==="admin" && pass==="1234")
+    {
+        window.location.href="home.html";
+    }
+    else
+    {
+        document.getElementById("msg").innerHTML=
+        "Invalid Username or Password";
+    }
 }
-
-window.addEventListener("scroll", () => {
-
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-
-        const position = card.getBoundingClientRect().top;
-
-        if(position < window.innerHeight - 100){
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-        }
-
-    });
-
-});

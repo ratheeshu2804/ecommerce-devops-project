@@ -1,63 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>NovaCart</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUXORA | Premium Shopping</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<nav>
-    <div class="logo">NovaCart</div>
+<nav class="navbar">
+    <div class="logo">LUXORA</div>
+
     <ul>
         <li><a href="#">Home</a></li>
+        <li><a href="#">Collections</a></li>
         <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
 </nav>
 
 <section class="hero">
-    <h1>Welcome to NovaCart</h1>
-    <p>Shop Smart. Live Better.</p>
 
-    <button onclick="shopNow()">Shop Now</button>
-    <button class="secondary">Explore</button>
+    <div class="hero-content">
+
+        <h1>Luxury Redefined.</h1>
+
+        <p>
+            Experience premium shopping powered by
+            automated DevOps deployment.
+        </p>
+
+        <div class="buttons">
+            <button onclick="explore()">Explore Collection</button>
+            <button class="secondary">Watch Demo</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat">
+        <h2>10K+</h2>
+        <p>Happy Customers</p>
+    </div>
+
+    <div class="stat">
+        <h2>500+</h2>
+        <p>Premium Products</p>
+    </div>
+
+    <div class="stat">
+        <h2>99%</h2>
+        <p>Satisfaction Rate</p>
+    </div>
+
 </section>
 
 <section class="products">
 
-    <div class="card">
-        <h2>Wireless Headphones</h2>
-        <p>Premium Sound Quality</p>
-        <button>Buy Now</button>
-    </div>
+    <h2>Featured Collection</h2>
 
-    <div class="card">
-        <h2>Smart Watch</h2>
-        <p>Track Your Fitness</p>
-        <button>Buy Now</button>
-    </div>
+    <div class="product-grid">
 
-    <div class="card">
-        <h2>Laptop</h2>
-        <p>Performance Redefined</p>
-        <button>Buy Now</button>
+        <div class="card">
+            <h3>Luxury Watch</h3>
+            <p>Timeless Elegance</p>
+        </div>
+
+        <div class="card">
+            <h3>Premium Laptop</h3>
+            <p>Ultimate Performance</p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Device</h3>
+            <p>Future Technology</p>
+        </div>
+
     </div>
 
 </section>
 
-<section class="features">
-    <h2>Why Choose Us?</h2>
+<section class="devops">
 
-    <div class="feature-grid">
-        <div>🚚 Fast Delivery</div>
-        <div>🔒 Secure Payments</div>
-        <div>⭐ Premium Quality</div>
+    <h2>CI/CD Auto Deployment</h2>
+
+    <div class="pipeline">
+
+        <div class="step">GitHub</div>
+        <div class="arrow">→</div>
+
+        <div class="step">Webhook</div>
+        <div class="arrow">→</div>
+
+        <div class="step">Jenkins</div>
+        <div class="arrow">→</div>
+
+        <div class="step">Docker</div>
+        <div class="arrow">→</div>
+
+        <div class="step">AWS EC2</div>
+
     </div>
+
 </section>
 
 <footer>
-    © 2026 NovaCart | DevOps Auto Deployment Project
+
+    <h3>LUXORA</h3>
+
+    <p>Premium Shopping Experience</p>
+
+    <p>Powered by AWS • Jenkins • Docker • GitHub</p>
+
 </footer>
 
 <script src="script.js"></script>

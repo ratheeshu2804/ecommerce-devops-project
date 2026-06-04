@@ -1,44 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
 body{
-font-family:Arial;
-margin:0;
-background:#f4f4f4;
+    background:#f4f6f9;
 }
 
 nav{
-background:#111827;
-color:white;
-padding:20px;
-display:flex;
-justify-content:space-between;
+    background:#111827;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
 }
 
 .hero{
-background:#2563eb;
-color:white;
-padding:60px;
-text-align:center;
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
 }
 
-.products{
-display:flex;
-justify-content:center;
-gap:20px;
-padding:40px;
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
 }
 
-.card{
-background:white;
-padding:20px;
-width:250px;
-border-radius:10px;
-box-shadow:0 4px 8px rgba(0,0,0,.2);
-text-align:center;
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
 }
 
 button{
-background:#2563eb;
-color:white;
-padding:10px;
-border:none;
-cursor:pointer;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    margin:10px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-5px);
+}
+
+.secondary{
+    background:white;
+}
+
+.products{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:60px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    width:280px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.features{
+    text-align:center;
+    padding:60px;
+}
+
+.feature-grid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.feature-grid div{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
